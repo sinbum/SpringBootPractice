@@ -12,8 +12,8 @@ import com.mongta.myspringboot.property.MongtaProperties;
 @Component
 public class MyRunner implements ApplicationRunner{
 	
-	@Value("${mongta.name}")
-	private String name;
+//	@Value("${mongta.name}")
+//	private String name;
 	
 	@Value("${mongta.age}")
 	private int age;
@@ -29,7 +29,7 @@ public class MyRunner implements ApplicationRunner{
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("foo : " + args.containsOption("foo"));
 		System.out.println("bar : " + args.containsOption("bar"));
-		System.out.println(name);
+//		System.out.println(name);
 		System.out.println("나이는" + age + "입니다.");
 		
 		
