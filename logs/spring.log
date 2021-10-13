@@ -1,0 +1,60 @@
+2021-10-13 16:33:31.205  INFO 1436 --- [restartedMain] c.m.m.MyspringbootApplication            : Starting MyspringbootApplication using Java 16.0.2 on DESKTOP-DRM07JT with PID 1436 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-13 16:33:31.207 DEBUG 1436 --- [restartedMain] c.m.m.MyspringbootApplication            : Running with Spring Boot v2.4.11, Spring v5.3.10
+2021-10-13 16:33:31.207  INFO 1436 --- [restartedMain] c.m.m.MyspringbootApplication            : The following profiles are active: test
+2021-10-13 16:33:31.241  INFO 1436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-13 16:33:32.096  WARN 1436 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-10-13 16:33:32.115  INFO 1436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-13 16:33:32.133  INFO 1436 --- [restartedMain] c.m.m.MyspringbootApplication            : Started MyspringbootApplication in 1.208 seconds (JVM running for 1.808)
+2021-10-13 16:33:32.134 DEBUG 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : foo : false
+2021-10-13 16:33:32.134 DEBUG 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : bar : true
+2021-10-13 16:33:32.134 DEBUG 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : 나이는25입니다.
+2021-10-13 16:33:32.134  INFO 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : -------------------------------------------
+2021-10-13 16:33:32.135  INFO 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : mongta 테스트모드
+2021-10-13 16:33:32.135  INFO 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : 49
+2021-10-13 16:33:32.135  INFO 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : mongta 테스트모드 Good!!
+2021-10-13 16:33:32.135  INFO 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : ------------------------------
+2021-10-13 16:33:32.135  INFO 1436 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : test Hello! 테스트 실행
+2021-10-13 16:34:29.015  INFO 2152 --- [restartedMain] c.m.m.MyspringbootApplication            : Starting MyspringbootApplication using Java 16.0.2 on DESKTOP-DRM07JT with PID 2152 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-13 16:34:29.016 DEBUG 2152 --- [restartedMain] c.m.m.MyspringbootApplication            : Running with Spring Boot v2.4.11, Spring v5.3.10
+2021-10-13 16:34:29.016  INFO 2152 --- [restartedMain] c.m.m.MyspringbootApplication            : The following profiles are active: base
+2021-10-13 16:34:29.052  INFO 2152 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-13 16:34:29.515  WARN 2152 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-10-13 16:34:29.531  INFO 2152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-13 16:34:29.547  INFO 2152 --- [restartedMain] c.m.m.MyspringbootApplication            : Started MyspringbootApplication in 0.785 seconds (JVM running for 1.324)
+2021-10-13 16:34:29.548 DEBUG 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : foo : false
+2021-10-13 16:34:29.549 DEBUG 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : bar : true
+2021-10-13 16:34:29.549 DEBUG 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : 나이는29입니다.
+2021-10-13 16:34:29.549  INFO 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : -------------------------------------------
+2021-10-13 16:34:29.549  INFO 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : Mongta 운영모드
+2021-10-13 16:34:29.549  INFO 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : 40
+2021-10-13 16:34:29.549  INFO 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : Mongta 운영모드 Good!!
+2021-10-13 16:34:29.549  INFO 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : ------------------------------
+2021-10-13 16:34:29.549  INFO 2152 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : Base Hello! base 실행
+2021-10-13 16:37:14.829  INFO 14108 --- [restartedMain] c.m.m.MyspringbootApplication            : Starting MyspringbootApplication using Java 16.0.2 on DESKTOP-DRM07JT with PID 14108 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-13 16:37:14.831  INFO 14108 --- [restartedMain] c.m.m.MyspringbootApplication            : The following profiles are active: base
+2021-10-13 16:37:14.859  INFO 14108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-13 16:37:15.310  WARN 14108 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-10-13 16:37:15.325  INFO 14108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-13 16:37:15.339  INFO 14108 --- [restartedMain] c.m.m.MyspringbootApplication            : Started MyspringbootApplication in 0.765 seconds (JVM running for 1.304)
+2021-10-13 16:37:15.341  INFO 14108 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : -------------------------------------------
+2021-10-13 16:37:15.341  INFO 14108 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : Mongta 운영모드
+2021-10-13 16:37:15.341  INFO 14108 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : 37
+2021-10-13 16:37:15.341  INFO 14108 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : Mongta 운영모드 Good!!
+2021-10-13 16:37:15.341  INFO 14108 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : ------------------------------
+2021-10-13 16:37:15.341  INFO 14108 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : Base Hello! base 실행
+2021-10-13 16:38:10.151  INFO 6612 --- [restartedMain] c.m.m.MyspringbootApplication            : Starting MyspringbootApplication using Java 16.0.2 on DESKTOP-DRM07JT with PID 6612 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-13 16:38:10.153 DEBUG 6612 --- [restartedMain] c.m.m.MyspringbootApplication            : Running with Spring Boot v2.4.11, Spring v5.3.10
+2021-10-13 16:38:10.153  INFO 6612 --- [restartedMain] c.m.m.MyspringbootApplication            : The following profiles are active: test
+2021-10-13 16:38:10.182  INFO 6612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-13 16:38:10.672  WARN 6612 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-10-13 16:38:10.687  INFO 6612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-13 16:38:10.702  INFO 6612 --- [restartedMain] c.m.m.MyspringbootApplication            : Started MyspringbootApplication in 0.801 seconds (JVM running for 1.391)
+2021-10-13 16:38:10.704 DEBUG 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : foo : false
+2021-10-13 16:38:10.704 DEBUG 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : bar : true
+2021-10-13 16:38:10.704 DEBUG 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : 나이는16입니다.
+2021-10-13 16:38:10.704  INFO 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : -------------------------------------------
+2021-10-13 16:38:10.704  INFO 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : mongta 테스트모드
+2021-10-13 16:38:10.704  INFO 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : 17
+2021-10-13 16:38:10.704  INFO 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : property : mongta 테스트모드 Good!!
+2021-10-13 16:38:10.704  INFO 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : ------------------------------
+2021-10-13 16:38:10.705  INFO 6612 --- [restartedMain] com.mongta.myspringboot.runner.MyRunner  : test Hello! 테스트 실행
