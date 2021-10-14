@@ -73,5 +73,10 @@ public class UserRestController {
 		userRepository.deleteById(id);
 		return ResponseEntity.ok(id + "User 삭제됨!");
 	}
+	
+	@GetMapping(value = "/userxml",produces = {"application/xml"})
+	public List<User> getUserXml(){
+		return userRepository.findAll();
+	}
 
 }
