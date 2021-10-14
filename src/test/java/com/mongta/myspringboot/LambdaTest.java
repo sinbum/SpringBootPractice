@@ -18,7 +18,7 @@ public class LambdaTest {
 			}
 		});
 		
-		//람다식의 표현
+		//람다식의 표현 Lambda expression
 		list.forEach(value -> System.out.println(value + "-------------------"));
 		
 		//Method Reference

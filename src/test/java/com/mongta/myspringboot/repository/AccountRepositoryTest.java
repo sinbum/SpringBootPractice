@@ -32,7 +32,13 @@ public class AccountRepositoryTest {
 		Optional<Account> optional = accountRepository.findByUsername("mongta");
 		if(optional.isPresent()) {
 			Account mongta = optional.get();
-			System.out.println(mongta.getUsername() + "");
+			System.out.println( "optanal" + mongta.getUsername() + "");
 		}
+		
+		Optional<Account> optional2 = accountRepository.findByUsername("tset");
+		//orElseThrow 아규먼트 Supplier의 T get() 메서드를 재정의
+		Account emptyAcct = optional2.orElseThrow(() -> new RuntimeException("Account Not Fount"));
+		optional2.orElseGet(() -> new Account());
+		
 	}
 }
