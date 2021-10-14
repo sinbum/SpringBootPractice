@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mongta.myspringboot.entity.User;
+import com.mongta.myspringboot.entity.Users;
 import com.mongta.myspringboot.exception.ResourceNotFoundException;
 import com.mongta.myspringboot.repository.UserRepository;
 
@@ -75,8 +76,10 @@ public class UserRestController {
 	}
 	
 	@GetMapping(value = "/userxml",produces = {"application/xml"})
-	public List<User> getUserXml(){
-		return userRepository.findAll();
+	public Users getUserXml(){
+		Users users = new Users();
+		users.setUsers(userRepository.findAll());
+		return users;
 	}
 
 }

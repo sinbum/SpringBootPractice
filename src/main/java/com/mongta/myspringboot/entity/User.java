@@ -6,15 +6,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 @Entity
 public class User {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JacksonXmlProperty(isAttribute = true)
 	private Long id;
 	
+	@JacksonXmlProperty
 	private String name;
 	
 	@Column(unique = true)
+	@JacksonXmlProperty
 	private String email;
 
 	public Long getId() {
