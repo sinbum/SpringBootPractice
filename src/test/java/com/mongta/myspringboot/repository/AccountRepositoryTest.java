@@ -30,7 +30,9 @@ public class AccountRepositoryTest {
 		assertThat(savedAcct).isNotNull();
 		
 		Optional<Account> optional = accountRepository.findByUsername("mongta");
-		System.out.println(optional.isPresent());
-		
+		if(optional.isPresent()) {
+			Account mongta = optional.get();
+			System.out.println(mongta.getUsername() + "");
+		}
 	}
 }
