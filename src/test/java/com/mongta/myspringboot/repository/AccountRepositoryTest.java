@@ -20,7 +20,7 @@ public class AccountRepositoryTest {
 	public void account() throws Exception{
 		
 		Account account = new Account();
-		account.setUsername("mongta");
+		account.setUsername("test");
 		account.setPassword("ab1234");
 		
 		//DB에 object를 저장함 - insert
