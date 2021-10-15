@@ -12,6 +12,8 @@
 			<td th:text="${user.name}"></td>
 			<td th:text="${user.email}"></td>
 			<td><a th:href="@{/edit/{id}(id=${user.id})}">update</a></td>
+			<td><a th:href="@{/delete/{id}(id=${user.id})}">delete</a></td>
+
 		</tr>
 	</table>
 	<a href="/signup">insert</a>

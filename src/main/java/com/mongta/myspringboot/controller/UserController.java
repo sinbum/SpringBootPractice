@@ -55,7 +55,8 @@ public class UserController {
 	public String showSignUpForm(User user) {
 		return "add-user";
 	}
-
+	
+	//수정
 	@GetMapping("/edit/{id}")
 	public String showUpdateForm(@PathVariable("id") long id, Model model) {
 		User user = userRepository.findById(id)
@@ -64,6 +65,7 @@ public class UserController {
 		return "update-user";
 	}
 
+	//수정
 	@PostMapping("/update/{id}")
 	public String updateUser(@PathVariable("id") long id, @Valid User user, BindingResult result, Model model) {
 		if (result.hasErrors()) {
@@ -74,5 +76,18 @@ public class UserController {
 		model.addAttribute("users", userRepository.findAll());
 		return "index";
 	}
+	
+	
+	//삭제
+	@GetMapping("/delete/{id}")
+	public String deleteUser(@PathVariable("id") long id, Model model) {
+		User user = userRepository.findById(id)
+				.orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+		userRepository.delete(user);
+		model.addAttribute("users", userRepository.findAll());
+		return "index";
+	}
+	
+	
 
 }
