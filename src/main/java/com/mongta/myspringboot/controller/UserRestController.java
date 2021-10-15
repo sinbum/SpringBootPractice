@@ -81,5 +81,10 @@ public class UserRestController {
 		users.setUsers(userRepository.findAll());
 		return users;
 	}
+	
+	@GetMapping("/mypage")
+	public String mypage() {
+	return "mypage";
+	}
 
 }
