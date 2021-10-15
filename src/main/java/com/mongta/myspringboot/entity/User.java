@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
@@ -15,10 +16,13 @@ public class User {
 	@JacksonXmlProperty(isAttribute = true)
 	private Long id;
 	
+	@NotBlank(message = "Name은 필수입력 항목입니다!")
 	@JacksonXmlProperty
 	private String name;
 	
+	
 	@Column(unique = true)
+	@NotBlank(message = "Email은 필수입력 항목입니다!")
 	@JacksonXmlProperty
 	private String email;
 
