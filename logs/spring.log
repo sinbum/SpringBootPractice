@@ -1658,3 +1658,171 @@ Caused by: java.lang.ClassNotFoundException: Name은
 2021-10-15 13:51:15.531  INFO 9136 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
 2021-10-15 13:51:15.534  INFO 9136 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as dacf813915fd
 2021-10-15 13:51:49.537  INFO 9136 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:51:49.538  INFO 9136 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2021-10-15 13:51:49.539  INFO 9136 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2021-10-15 13:51:49.642  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Starting MyspringbootApplicationTest using Java 16.0.2 on DESKTOP-DRM07JT with PID 9136 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-15 13:51:49.643 DEBUG 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Running with Spring Boot v2.4.11, Spring v5.3.10
+2021-10-15 13:51:49.643  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : The following profiles are active: test
+2021-10-15 13:51:49.886  INFO 9136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-15 13:51:49.896  INFO 9136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2021-10-15 13:51:49.972  INFO 9136 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8087 (http)
+2021-10-15 13:51:49.973  INFO 9136 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-10-15 13:51:49.973  INFO 9136 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-15 13:51:49.990  INFO 9136 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-10-15 13:51:49.990  INFO 9136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 345 ms
+2021-10-15 13:51:50.020  INFO 9136 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2021-10-15 13:51:50.022  INFO 9136 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2021-10-15 13:51:50.022  INFO 9136 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2021-10-15 13:51:50.049  INFO 9136 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-15 13:51:50.053  INFO 9136 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-10-15 13:51:50.097  INFO 9136 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-15 13:51:50.098  INFO 9136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:51:50.108  INFO 9136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-15 13:51:50.168  WARN 9136 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-15 13:51:50.206  INFO 9136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-10-15 13:51:50.314  INFO 9136 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-10-15 13:51:50.328  INFO 9136 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8087 (http) with context path ''
+2021-10-15 13:51:50.337  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Started MyspringbootApplicationTest in 0.736 seconds (JVM running for 2763.032)
+2021-10-15 13:51:50.338 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : foo : false
+2021-10-15 13:51:50.339 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : bar : true
+2021-10-15 13:51:50.339 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : 나이는2입니다.
+2021-10-15 13:51:50.339  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : -------------------------------------------
+2021-10-15 13:51:50.339  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드
+2021-10-15 13:51:50.339  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : 32
+2021-10-15 13:51:50.339  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드 Good!!
+2021-10-15 13:51:50.339  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : ------------------------------
+2021-10-15 13:51:50.339  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : test Hello! 테스트 실행
+2021-10-15 13:51:50.340  INFO 9136 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-15 13:51:50.347  INFO 9136 --- [http-nio-8087-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-15 13:51:50.347  INFO 9136 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-10-15 13:51:50.348  INFO 9136 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2021-10-15 13:51:50.350  INFO 9136 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as dacf813915fd
+2021-10-15 13:52:15.177  INFO 9136 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:52:15.178  INFO 9136 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2021-10-15 13:52:15.180  INFO 9136 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2021-10-15 13:52:15.299  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Starting MyspringbootApplicationTest using Java 16.0.2 on DESKTOP-DRM07JT with PID 9136 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-15 13:52:15.299 DEBUG 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Running with Spring Boot v2.4.11, Spring v5.3.10
+2021-10-15 13:52:15.300  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : The following profiles are active: test
+2021-10-15 13:52:15.691  INFO 9136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-15 13:52:15.705  INFO 9136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2021-10-15 13:52:15.858  INFO 9136 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8087 (http)
+2021-10-15 13:52:15.859  INFO 9136 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-10-15 13:52:15.860  INFO 9136 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-15 13:52:15.885  INFO 9136 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-10-15 13:52:15.885  INFO 9136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 583 ms
+2021-10-15 13:52:15.931  INFO 9136 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2021-10-15 13:52:15.933  INFO 9136 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2021-10-15 13:52:15.933  INFO 9136 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2021-10-15 13:52:15.982  INFO 9136 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-15 13:52:15.989  INFO 9136 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-10-15 13:52:16.057  INFO 9136 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-15 13:52:16.058  INFO 9136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:52:16.073  INFO 9136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-15 13:52:16.141  WARN 9136 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-15 13:52:16.186  INFO 9136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-10-15 13:52:16.307  INFO 9136 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-10-15 13:52:16.321  INFO 9136 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8087 (http) with context path ''
+2021-10-15 13:52:16.330  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Started MyspringbootApplicationTest in 1.087 seconds (JVM running for 2789.026)
+2021-10-15 13:52:16.332 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : foo : false
+2021-10-15 13:52:16.332 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : bar : true
+2021-10-15 13:52:16.332 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : 나이는49입니다.
+2021-10-15 13:52:16.332  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : -------------------------------------------
+2021-10-15 13:52:16.332  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드
+2021-10-15 13:52:16.332  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : 14
+2021-10-15 13:52:16.332  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드 Good!!
+2021-10-15 13:52:16.332  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : ------------------------------
+2021-10-15 13:52:16.332  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : test Hello! 테스트 실행
+2021-10-15 13:52:16.333  INFO 9136 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-15 13:52:16.340  INFO 9136 --- [http-nio-8087-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-15 13:52:16.340  INFO 9136 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-10-15 13:52:16.342  INFO 9136 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2021-10-15 13:52:16.344  INFO 9136 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as dacf813915fd
+2021-10-15 13:52:17.772  INFO 9136 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:52:17.773  INFO 9136 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2021-10-15 13:52:17.775  INFO 9136 --- [Thread-15] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2021-10-15 13:52:17.862  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Starting MyspringbootApplicationTest using Java 16.0.2 on DESKTOP-DRM07JT with PID 9136 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-15 13:52:17.863 DEBUG 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Running with Spring Boot v2.4.11, Spring v5.3.10
+2021-10-15 13:52:17.863  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : The following profiles are active: test
+2021-10-15 13:52:18.042  INFO 9136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-15 13:52:18.049  INFO 9136 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2021-10-15 13:52:18.112  INFO 9136 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8087 (http)
+2021-10-15 13:52:18.112  INFO 9136 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-10-15 13:52:18.112  INFO 9136 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-15 13:52:18.128  INFO 9136 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-10-15 13:52:18.128  INFO 9136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 264 ms
+2021-10-15 13:52:18.161  INFO 9136 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2021-10-15 13:52:18.164  INFO 9136 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2021-10-15 13:52:18.164  INFO 9136 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2021-10-15 13:52:18.192  INFO 9136 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-15 13:52:18.195  INFO 9136 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-10-15 13:52:18.235  INFO 9136 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-15 13:52:18.235  INFO 9136 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:52:18.243  INFO 9136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-15 13:52:18.295  WARN 9136 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-15 13:52:18.333  INFO 9136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-10-15 13:52:18.446  INFO 9136 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-10-15 13:52:18.459  INFO 9136 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8087 (http) with context path ''
+2021-10-15 13:52:18.467  INFO 9136 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Started MyspringbootApplicationTest in 0.635 seconds (JVM running for 2791.162)
+2021-10-15 13:52:18.469 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : foo : false
+2021-10-15 13:52:18.469 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : bar : true
+2021-10-15 13:52:18.469 DEBUG 9136 --- [restartedMain] c.m.m.r.MyRunner                         : 나이는31입니다.
+2021-10-15 13:52:18.469  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : -------------------------------------------
+2021-10-15 13:52:18.469  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드
+2021-10-15 13:52:18.469  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : 35
+2021-10-15 13:52:18.469  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드 Good!!
+2021-10-15 13:52:18.469  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : ------------------------------
+2021-10-15 13:52:18.469  INFO 9136 --- [restartedMain] c.m.m.r.MyRunner                         : test Hello! 테스트 실행
+2021-10-15 13:52:18.470  INFO 9136 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-15 13:52:18.476  INFO 9136 --- [http-nio-8087-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-15 13:52:18.476  INFO 9136 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-10-15 13:52:18.477  INFO 9136 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2021-10-15 13:52:18.479  INFO 9136 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as dacf813915fd
+2021-10-15 13:52:37.760  INFO 9136 --- [RMI TCP Connection(61)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-10-15 13:52:37.797  INFO 9136 --- [RMI TCP Connection(61)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:52:37.798  INFO 9136 --- [RMI TCP Connection(61)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2021-10-15 13:52:37.801  INFO 9136 --- [RMI TCP Connection(61)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2021-10-15 13:52:42.001  INFO 15656 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Starting MyspringbootApplicationTest using Java 16.0.2 on DESKTOP-DRM07JT with PID 15656 (E:\Spring\myspringboot\target\classes started by MongTa in E:\Spring\myspringboot)
+2021-10-15 13:52:42.006 DEBUG 15656 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Running with Spring Boot v2.4.11, Spring v5.3.10
+2021-10-15 13:52:42.007  INFO 15656 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : The following profiles are active: test
+2021-10-15 13:52:42.039  INFO 15656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-15 13:52:42.039  INFO 15656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-15 13:52:42.710  INFO 15656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-15 13:52:42.746  INFO 15656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2021-10-15 13:52:43.206  INFO 15656 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8087 (http)
+2021-10-15 13:52:43.215  INFO 15656 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2021-10-15 13:52:43.215  INFO 15656 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-15 13:52:43.291  INFO 15656 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2021-10-15 13:52:43.291  INFO 15656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1251 ms
+2021-10-15 13:52:43.378  INFO 15656 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2021-10-15 13:52:43.427  INFO 15656 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2021-10-15 13:52:43.433  INFO 15656 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1:3306/boot_db?useUnicode=true&charaterEncoding=utf-8&useSSL=false&serverTimezone=UTC'
+2021-10-15 13:52:43.538  INFO 15656 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-15 13:52:43.576  INFO 15656 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-15 13:52:43.670  INFO 15656 --- [restartedMain] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-15 13:52:43.762  INFO 15656 --- [restartedMain] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-10-15 13:52:44.228  INFO 15656 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-15 13:52:44.236  INFO 15656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 13:52:44.262  INFO 15656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-15 13:52:44.536  WARN 15656 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-15 13:52:44.672  INFO 15656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-10-15 13:52:44.959  INFO 15656 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 18e08f60-9af7-40ec-9af7-efdc9c2f45fa
+
+2021-10-15 13:52:45.047  INFO 15656 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-10-15 13:52:45.059  INFO 15656 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c71e88d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b8ffddc, org.springframework.security.web.header.HeaderWriterFilter@d9a7c87, org.springframework.web.filter.CorsFilter@3b0e5779, org.springframework.security.web.csrf.CsrfFilter@35c573ce, org.springframework.security.web.authentication.logout.LogoutFilter@7a35c5f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@713972d9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1db6cf3b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7002e94c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5ab23eba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29f8bf7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8ffc7ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48712cd4, org.springframework.security.web.session.SessionManagementFilter@70be220c, org.springframework.security.web.access.ExceptionTranslationFilter@21603191, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43daf3b1]
+2021-10-15 13:52:45.171  INFO 15656 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8087 (http) with context path ''
+2021-10-15 13:52:45.182  INFO 15656 --- [restartedMain] c.m.m.MyspringbootApplicationTest        : Started MyspringbootApplicationTest in 3.517 seconds (JVM running for 4.366)
+2021-10-15 13:52:45.188 DEBUG 15656 --- [restartedMain] c.m.m.r.MyRunner                         : foo : false
+2021-10-15 13:52:45.188 DEBUG 15656 --- [restartedMain] c.m.m.r.MyRunner                         : bar : true
+2021-10-15 13:52:45.188 DEBUG 15656 --- [restartedMain] c.m.m.r.MyRunner                         : 나이는7입니다.
+2021-10-15 13:52:45.188  INFO 15656 --- [restartedMain] c.m.m.r.MyRunner                         : -------------------------------------------
+2021-10-15 13:52:45.189  INFO 15656 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드
+2021-10-15 13:52:45.189  INFO 15656 --- [restartedMain] c.m.m.r.MyRunner                         : property : 3
+2021-10-15 13:52:45.189  INFO 15656 --- [restartedMain] c.m.m.r.MyRunner                         : property : mongta 테스트모드 Good!!
+2021-10-15 13:52:45.189  INFO 15656 --- [restartedMain] c.m.m.r.MyRunner                         : ------------------------------
+2021-10-15 13:52:45.189  INFO 15656 --- [restartedMain] c.m.m.r.MyRunner                         : test Hello! 테스트 실행
+2021-10-15 13:52:45.279  INFO 15656 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as dacf813915fd
+2021-10-15 13:52:45.305  INFO 15656 --- [http-nio-8087-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-15 13:52:45.305  INFO 15656 --- [http-nio-8087-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2021-10-15 13:52:45.306  INFO 15656 --- [http-nio-8087-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
