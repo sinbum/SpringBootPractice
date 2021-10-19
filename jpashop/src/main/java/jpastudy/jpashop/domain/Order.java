@@ -42,5 +42,24 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
+    //--연관관계 메서드
+    //Order와 Member
+    public void setMember(Member member){
+        this.member=member;
+        member.getOrders().add(this);
+    }
+
+    //Order와 delivery
+    public void setDelivery (Delivery delivery){
+        this.delivery=delivery;
+        delivery.setOrder(this);
+    }
+
+    //Order 와 OrderItem(1:N)
+    public void addOrderItem(OrderItem orderItem){
+        this.orderItems.add(orderItem);
+        orderItem.setOrder(this);
+    }
+
 
 }

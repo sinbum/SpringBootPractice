@@ -23,6 +23,4 @@ public class Member {
     @OneToMany(mappedBy = "member") //OrderClass 에서 참조하는쪽에게 매핑을 걸어준다. mappedBy = "member"
     private List<Order> orders = new ArrayList<>();
 
-
-
 }
