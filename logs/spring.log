@@ -3792,3 +3792,7 @@ java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the i
 2021-10-15 15:35:07.215  INFO 18428 --- [http-nio-8087-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-10-15 15:35:07.215  INFO 18428 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2021-10-15 15:35:07.217  INFO 18428 --- [http-nio-8087-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2021-10-15 16:09:29.184  INFO 18428 --- [RMI TCP Connection(46)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-10-15 16:09:29.220  INFO 18428 --- [RMI TCP Connection(46)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-15 16:09:29.228  INFO 18428 --- [RMI TCP Connection(46)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2021-10-15 16:09:29.230  INFO 18428 --- [RMI TCP Connection(46)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
