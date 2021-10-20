@@ -1,108 +1,72 @@
 package jpastudy.jpashop.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
 @Entity
 @Table(name = "orders")
+@Getter @Setter
 public class Order {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue
     @Column(name = "order_id")
     private Long id;
-    //Member 와 N:1 관계
-    //FetchType.LAZY 즉 지연로딩을 사용 하는 이유는 성능 최적화 및 JPQL에서 N+1 문제를 일으키는 것을 방지한다.
-    //참조를 할때에 @joinColumn 어노테이션을 사용함.
-    // ex) sql에서의 reference
-    //멤버를 참조하는쪽. Order가 주인이 됨. 48P
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
-    private Member member;
-    //Delivery와 1:1 관계
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "delivery_id")
-    private Delivery delivery;
-    //OrderItem과의 관계 1:N 관계
+    private Member member; //주문 회원
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
-    //주문날짜
-    private LocalDateTime orderDate;
-    //주문상태
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "delivery_id")
+    private Delivery delivery; //배송정보
+    private LocalDateTime orderDate; //주문시간
     @Enumerated(EnumType.STRING)
-    private OrderStatus status;
-
-    //--연관관계 메서드
-    //Order와 Member
+    private OrderStatus status; //주문상태 [ORDER, CANCEL]
+    //==연관관계 메서드==//
     public void setMember(Member member) {
         this.member = member;
         member.getOrders().add(this);
     }
-
-    //Order와 delivery
+    public void addOrderItem(OrderItem orderItem) {
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
+    }
     public void setDelivery(Delivery delivery) {
         this.delivery = delivery;
         delivery.setOrder(this);
     }
-
-    //Order 와 OrderItem(1:N)
-    public void addOrderItem(OrderItem orderItem) {
-        this.orderItems.add(orderItem);
-        orderItem.setOrder(this);
+    //== 비즈니스 로직 : 주문생성 메서드==//
+    public static Order createOrder (Member member, Delivery delivery,OrderItem... orderItems) {
+        Order order = new Order();
+        order.setMember(member);
+        order.setDelivery(delivery);
+        for (OrderItem orderItem : orderItems) {
+            order.addOrderItem(orderItem);
+        }
+        order.setStatus(OrderStatus.ORDER);
+        order.setOrderDate(LocalDateTime.now());
+        return order;
     }
-
-    //<editor-fold defaultstate="collapsed" desc="delombok">
-    @SuppressWarnings("all")
-    public Long getId() {
-        return this.id;
+    //==비즈니스 로직 : 주문 취소 ==//
+    public void cancel() {
+        if (delivery.getStatus() == DeliveryStatus.COMP) {
+            throw new IllegalStateException("이미 배송완료된 상품은 취소가 불가능합니다.");
+        }
+        this.setStatus(OrderStatus.CANCEL);
+        for (OrderItem orderItem : orderItems) {
+            orderItem.cancel();
+        }
     }
-    //</editor-fold>
-
-    //<editor-fold defaultstate="collapsed" desc="delombok">
-    @SuppressWarnings("all")
-    public Member getMember() {
-        return this.member;
+    //==비즈니스 로직 : 전체 주문 가격 조회 ==//
+    public int getTotalPrice() {
+        int totalPrice = 0;
+        for (OrderItem orderItem : orderItems) {
+            totalPrice += orderItem.getTotalPrice();
+        }
+        return totalPrice;
     }
-
-    @SuppressWarnings("all")
-    public Delivery getDelivery() {
-        return this.delivery;
-    }
-
-    @SuppressWarnings("all")
-    public List<OrderItem> getOrderItems() {
-        return this.orderItems;
-    }
-
-    @SuppressWarnings("all")
-    public LocalDateTime getOrderDate() {
-        return this.orderDate;
-    }
-
-    @SuppressWarnings("all")
-    public OrderStatus getStatus() {
-        return this.status;
-    }
-
-    @SuppressWarnings("all")
-    public void setId(final Long id) {
-        this.id = id;
-    }
-
-    @SuppressWarnings("all")
-    public void setOrderItems(final List<OrderItem> orderItems) {
-        this.orderItems = orderItems;
-    }
-
-    @SuppressWarnings("all")
-    public void setOrderDate(final LocalDateTime orderDate) {
-        this.orderDate = orderDate;
-    }
-
-    @SuppressWarnings("all")
-    public void setStatus(final OrderStatus status) {
-        this.status = status;
-    }
-    //</editor-fold>
 }
+

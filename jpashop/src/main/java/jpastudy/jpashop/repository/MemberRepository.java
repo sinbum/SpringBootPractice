@@ -2,6 +2,9 @@ package jpastudy.jpashop.repository;
 
 import jpastudy.jpashop.domain.Member;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
 import javax.persistence.EntityManager;
 import java.util.List;
 //final 변수를 인자로 받는 생성자 함수를 자동으로 생성.
@@ -12,6 +15,7 @@ public class MemberRepository {
     private final EntityManager em;
 
     //등록
+    @Transactional(propagation = Propagation.MANDATORY)
     public void save(Member member) {
         em.persist(member);
     }

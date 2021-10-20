@@ -1,7 +1,7 @@
-package jpastudy.jpashop.domain.service;
+package jpastudy.jpashop.service;
 
 import jpastudy.jpashop.domain.Member;
-import jpastudy.jpashop.domain.repository.MemberRepository;
+import jpastudy.jpashop.repository.MemberRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
