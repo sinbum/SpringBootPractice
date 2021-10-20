@@ -2,17 +2,13 @@ package jpastudy.jpashop.domain.service;
 
 import jpastudy.jpashop.domain.Member;
 import jpastudy.jpashop.domain.repository.MemberRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
-@RequiredArgsConstructor
 public class MemberService {
-
     //@Autowired
     private final MemberRepository memberRepository;
 
@@ -41,4 +37,10 @@ public class MemberService {
         return memberRepository.findOne(memberId);
     }
 
+    //<editor-fold defaultstate="collapsed" desc="delombok">
+    @SuppressWarnings("all")
+    public MemberService(final MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+    //</editor-fold>
 }
