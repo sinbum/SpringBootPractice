@@ -12,7 +12,6 @@ public class NotEnoughStockException extends RuntimeException{
         super(message, cause);
     }
 
-
     public NotEnoughStockException(Throwable cause) {
         super(cause);
     }
