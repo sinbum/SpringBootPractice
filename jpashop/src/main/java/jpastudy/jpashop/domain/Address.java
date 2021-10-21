@@ -1,37 +1,23 @@
 package jpastudy.jpashop.domain;
 
+import lombok.Getter;
+
 import javax.persistence.Embeddable;
-//다른패키지에서 사용하지 말라는 으믜로 타 개발자와 커뮤니케이션을 위해서 이렇게 설정하는 이유임.
+
 @Embeddable
+@Getter
 public class Address {
     private String city;
     private String street;
-    private String zip;
+    private String zipcode;
 
-    public Address(String city, String street, String zip) {
+    protected Address() {
+
+    }
+
+    public Address(String city, String street, String zipcode) {
         this.city = city;
         this.street = street;
-        this.zip = zip;
+        this.zipcode = zipcode;
     }
-
-    //<editor-fold defaultstate="collapsed" desc="delombok">
-    @SuppressWarnings("all")
-    public String getCity() {
-        return this.city;
-    }
-
-    @SuppressWarnings("all")
-    public String getStreet() {
-        return this.street;
-    }
-
-    @SuppressWarnings("all")
-    public String getZip() {
-        return this.zip;
-    }
-
-    @SuppressWarnings("all")
-    protected Address() {
-    }
-    //</editor-fold>
 }

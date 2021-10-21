@@ -2,53 +2,54 @@ package jpastudy.jpashop.service;
 
 import jpastudy.jpashop.domain.Member;
 import jpastudy.jpashop.repository.MemberRepository;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Rollback;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
+@RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
-class MemberServiceTest {
-
+public class MemberServiceTest {
+    @Autowired
+    MemberRepository memberRepository;
     @Autowired
     MemberService memberService;
 
-    @Autowired
-    MemberRepository memberRepository;
-
     @Test
+    @Rollback(false)
     public void 회원가입() throws Exception {
-        //Given
         Member member = new Member();
-        member.setName("boot");
-        //When
+        member.setName("부트");
+
         Long saveId = memberService.join(member);
-        //Then
+
         assertEquals(member, memberRepository.findOne(saveId));
+
     }
 
-    @Test
-    public void 중복_회원_예외() throws Exception{
-        Member member1 = new Member();
-        member1.setName("boot");
+    @Test(expected = IllegalStateException.class)
+    public void 회원중복() throws Exception {
+        Member member = new Member();
+        member.setName("부트");
 
         Member member2 = new Member();
-        member2.setName("boot");
+        member2.setName("부트");
 
-        IllegalStateException illegalStateException = Assertions.assertThrows(IllegalStateException.class, () ->
-        {
-            //When
-            memberService.join(member1);
-            memberService.join(member2); // 예외가 발생하도록. member2도 넣어준다.
-        });
+        memberService.join(member);
+//        try {
+        memberService.join(member2);
+//        }catch (IllegalStateException e) {
+//            return;
+//        }
 
-        //Then
-        assertEquals("이미 존재하는 회원입니다.", illegalStateException.getMessage());
-
+        fail("중복예외가 발생되었음");
     }
 
 }

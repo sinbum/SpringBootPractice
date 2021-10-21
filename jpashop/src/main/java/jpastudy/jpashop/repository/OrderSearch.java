@@ -1,15 +1,11 @@
-package jpastudy.jpashop.domain;
+package jpastudy.jpashop.repository;
 
+import jpastudy.jpashop.domain.OrderStatus;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+@Getter @Setter
 public class OrderSearch {
-    //회원이름
     private String memberName;
-    //주문상태(ORDER, CANCEL)
-    //주문상태(ORDER, CANCEL)
     private OrderStatus orderStatus;
-
 }
